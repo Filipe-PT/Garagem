@@ -1,0 +1,119 @@
+# Enable Home Assistant API
+api:
+
+  services:
+    - service: control_servo_direito
+      variables:
+        level: float
+      then:
+        - servo.write:
+            id: servo_direito
+            level: !lambda 'return level / 100.0;'
+  
+    - service: control_servo_esquerdo
+      variables:
+        level: float
+      then:
+        - servo.write:
+            id: servo_esquerdo
+            level: !lambda 'return level / 100.0;'
+
+
+#################################################################
+
+captive_portal:
+
+#### EFEITOS LUZ ####
+
+light:
+  - platform: fastled_clockless
+    chipset: WS2812B
+    pin: 5
+    num_leds: 16
+    rgb_order: GRB
+    name: "Luz da Garagem"
+    id: garage_led
+    effects:
+      - addressable_lambda:
+          name: "Red" 
+          update_interval: 150ms
+          lambda: |-
+            static int step = 0;
+            static int direction = 1;
+
+            if(initial_run){
+                step = 0;
+                it.all() = ESPColor(0,0,0);
+            }
+
+            it[step] = ESPColor(255,0,0);
+            it[it.size() - step] = ESPColor(255,0,0);
+
+            step = step + direction;
+
+            if(step > it.size()/2){
+                step = 0;
+                it.all() = ESPColor(0,0,0);
+            } 
+      - addressable_lambda:
+          name: "Green"
+          update_interval: 150ms
+          lambda: |-
+            static int step = it.size()/2;
+            static int step1 = it.size()/2;
+            static int direction = 1;
+
+            if(initial_run){
+                step = it.size()/2;
+                step1 = it.size()/2;
+                it.all() = ESPColor(0,0,0);
+            }
+
+            it[step] = ESPColor(0,255,0);
+            it[step1] = ESPColor(0,255,0);
+
+            step = step + direction;
+            step1 = step1 - direction;
+
+            if(step > it.size()){
+                step = it.size()/2;
+                step1 = it.size()/2;
+                it.all() = ESPColor(0,0,0);
+            }
+
+###### SERVOS ######
+
+## Servo 1 ##
+servo:
+  - id: servo_direito
+    output: servo_dir
+    
+###### Velocidade servo 1 ######    
+    transition_length: 1s
+
+## SERVO 2 ##
+    
+  - id: servo_esquerdo
+    output: servo_esq
+###### Velocidade SERVO 2 ######
+    transition_length: 1s
+
+
+###### OUTPUT ##########
+
+output:
+  - platform: ledc
+    id: servo_dir
+    pin: 4
+    frequency: 50 Hz  
+    
+  - platform: ledc
+    id: servo_esq
+    pin: 18
+    frequency: 50 Hz
+    
+
+            
+
+
+
