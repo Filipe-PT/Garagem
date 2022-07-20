@@ -56,3 +56,7 @@ Quando tiver tudo instalado, cabe a cada um ir aumentando o nível de abertura e
 
 # Segurança:
 Muito cuidado a mexer com corrente elétrica ... não me responsabilizo por qualquer dano causado.
+
+# Agradecimentos :
+Desde já agradeço a todos os membros que me ajudaram a realizar este projeto em ESPHome/NodeRed, já o tinha feito por outros caminhos que não este, tinha-o feito por um projeto já existente mas por mqtt.
+Não vou citar nomes , quem ajudou sabe . Grande Abraço para todos e OBRIGADO.
