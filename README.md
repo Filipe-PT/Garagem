@@ -31,7 +31,7 @@ Deixo video de demonstração... nas pastas.
 ## Esquema elétrico :
 
 Existe várias maneira de o fazer neste repositório tem 2 soluções, uma mais económica, outra mais profissional, as duas funcionam bem por igual.
-- [Solução económica ](https://im.ge/i/FOcz1C)
+- [Solução económica ](https://im.ge/i/FOW8V4)
 - [Solução profissional](https://im.ge/i/FOce7r)
 
 
