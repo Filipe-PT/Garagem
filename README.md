@@ -14,7 +14,7 @@ Deixo video de demonstração... nas pastas.
 
 ## Material :
 
-- 2x [Servos](https://www.amazon.es/gp/product/B088NJRFD7) ( usados neste projeto ).
+- 2x [Servos]([https://www.amazon.es/gp/product/B088NJRFD7](https://www.amazon.es/dp/B09WRBHSVD/ref=sr_1_1_sspa?crid=2JBRRRSQ2JZ62&keywords=servo+motor&qid=1673390953&sprefix=servo+motor%2Caps%2C138&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)) ( usados neste projeto ).
 
 - 1x [ESP32-WROOM-32](https://www.amazon.es/dp/B071P98VTG/ref=sr_1_1_sspa?crid=10L8C4C4UDED0&keywords=esp32&qid=1658250876&refinements=p_76%3A13956313031&rnid=831276031&rps=1&s=computers&sprefix=esp32+%2Ccomputers%2C84&sr=1-1-spons&psc=1&smid=A1X7QLRQH87QA3&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyN1FETlRCMzdGTUJIJmVuY3J5cHRlZElkPUEwMDA0NjYyOTVWTkVaQjFDVjI5JmVuY3J5cHRlZEFkSWQ9QTA1MTA1MTBVMzNLQVFCVFo2Nlgmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl) ( também funciona com [ESP8266](https://www.amazon.es/dp/B06Y1LZLLY/ref=sr_1_2_sspa?crid=7MZPZB29QQ2C&keywords=esp8266+nodemcu&qid=1658251693&sprefix=ESP8266%2Caps%2C88&sr=8-2-spons&psc=1&smid=A1X7QLRQH87QA3&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyMzZaM0hTVUxLRFNEJmVuY3J5cHRlZElkPUEwOTM3MjQ1M043SzdKNFlOR0VEQyZlbmNyeXB0ZWRBZElkPUEwNTg5OTQxNzhPREpSQ0dKQzlUJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==) ).
 
